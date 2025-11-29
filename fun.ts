@@ -76,3 +76,45 @@ const examSubjectsTracker = (studentName: string, ...subjects: string[]): string
 
 console.log(examSubjectsTracker("Jerin", "Statistics", "Epidemiology", "Biochemical Nutrition"));//output: Jerin, you must have to porashuna: Statistics, Epidemiology, Biochemical Nutrition. Stay strong and keep going!!
 console.log(examSubjectsTracker("Jerin"));// Jerin, you are doing itraamii too much! Add some subjects first!!
+
+
+/*
+  Problem 5 – Lazy Food Decision Maker 
+Problem:
+
+You built a mini AI robot to help you decide what to eat because you are too lazy.
+You pass your “mood” to the robot and the robot suggests a food.
+
+Create a function foodDecisionBot(mood: string) that:
+
+If mood = "happy" → return "Eat biriyani! Celebrate your joy!"
+
+If mood = "sad" → return "Eat ice cream… emotions > diet!"
+
+If mood = "lazy" → return "Order pizza. You won't cook anyway."
+
+For any other mood → return "Just drink water. Confused feelings detected."
+
+Mood must be typed strictly using a union type.
+*/
+
+type Mood = "happy"| "angry" | "sad" | "lazy";
+
+function foodDecisionBot(mood: Mood): string {
+    if (mood === "happy") {
+        return "I will biriyani khaboooo!";
+    }
+    else if (mood === "sad"){
+        return "Eat ice cream… emotions > diet!!"
+    }else if (mood === "angry"){
+        return "football banay ekta kick dibo..then I will eat sth spicy"
+    }
+    else {
+        return "vallagena!!Order pizza!!"
+    }
+}
+
+console.log(foodDecisionBot("angry"));// football banay ekta kick dibo..then I will eat sth spicy
+console.log(foodDecisionBot("happy"));//I will biriyani khaboooo!
+
+console.log(foodDecisionBot("lazy"));// vallagena!!Order pizza!!
