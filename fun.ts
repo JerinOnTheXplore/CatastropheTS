@@ -78,7 +78,7 @@ console.log(examSubjectsTracker("Jerin"));// Jerin, you are doing itraamii too m
 
 
 /*
-  Problem 5 – Lazy Food Decision Maker 
+  Problem 4 – Lazy Food Decision Maker 
 Problem:
 
 You built a mini AI robot to help you decide what to eat because you are too lazy.
@@ -120,7 +120,7 @@ console.log(foodDecisionBot("lazy"));// vallagena!!Order pizza!!
 
 
 /*
-Problem 6 – Doraemon’s Time Travel 
+Problem 5 – Doraemon’s Time Travel 
 
 Nobita has messed up his homework again !!
 So Doraemon brought out his Time Machine to help (or make things worse).
